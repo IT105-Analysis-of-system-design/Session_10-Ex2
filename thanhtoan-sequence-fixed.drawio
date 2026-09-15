@@ -1,116 +1,101 @@
-<mxfile host="app.diagrams.net">
+<mxfile host="Electron">
   <diagram name="Sequence - Thanh toan RikkeiBank (Da sua)" id="seq-thanhtoan-fixed">
-    <mxGraphModel dx="1400" dy="850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1373" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-
-        <!-- ===== Headers ===== -->
-        <mxCell id="actor_head" value="Kh\u00e1ch h\u00e0ng" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="130" y="40" width="40" height="70" as="geometry" />
+        <mxCell id="actor_head" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=12;" value="Khách hàng" vertex="1">
+          <mxGeometry height="70" width="40" x="130" y="40" as="geometry" />
         </mxCell>
-        <mxCell id="ctt_head" value="C\u1ed5ng Thanh To\u00e1n" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="440" y="60" width="140" height="40" as="geometry" />
+        <mxCell id="ctt_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" value="Cổng thanh toán" vertex="1">
+          <mxGeometry height="40" width="140" x="440" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="nhl_head" value="Ng\u00e2n H\u00e0ng L\u00f5i" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="780" y="60" width="140" height="40" as="geometry" />
+        <mxCell id="nhl_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" value="Ngân hàng" vertex="1">
+          <mxGeometry height="40" width="140" x="780" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="email_head" value="EmailServer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="1080" y="60" width="140" height="40" as="geometry" />
+        <mxCell id="email_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" value="EmailServer" vertex="1">
+          <mxGeometry height="40" width="140" x="1080" y="60" as="geometry" />
         </mxCell>
-
-        <!-- ===== Lifelines ===== -->
-        <mxCell id="actor_line" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1">
+        <mxCell id="actor_line" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="150" y="110" as="sourcePoint" />
             <mxPoint x="150" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ctt_line" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1">
+        <mxCell id="ctt_line" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="510" y="100" as="sourcePoint" />
             <mxPoint x="510" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nhl_line" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1">
+        <mxCell id="nhl_line" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="850" y="100" as="sourcePoint" />
             <mxPoint x="850" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="email_line" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;" edge="1" parent="1">
+        <mxCell id="email_line" edge="1" parent="1" style="endArrow=none;startArrow=none;dashed=1;html=1;strokeColor=#000000;">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1150" y="100" as="sourcePoint" />
             <mxPoint x="1150" y="700" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- ===== Activation bars ===== -->
-        <mxCell id="ctt_act" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="505" y="150" width="10" height="310" as="geometry" />
+        <mxCell id="ctt_act" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="310" width="10" x="505" y="150" as="geometry" />
         </mxCell>
-        <mxCell id="ctt_act_self" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="510" y="190" width="10" height="35" as="geometry" />
+        <mxCell id="nhl_act" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="65" width="10" x="845" y="260" as="geometry" />
         </mxCell>
-        <mxCell id="nhl_act" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="845" y="260" width="10" height="65" as="geometry" />
+        <mxCell id="email_act" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1">
+          <mxGeometry height="40" width="10" x="1145" y="380" as="geometry" />
         </mxCell>
-        <mxCell id="email_act" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="1145" y="380" width="10" height="40" as="geometry" />
-        </mxCell>
-
-        <!-- ===== Buoc 1: Sync - Khach hang -> Cong Thanh Toan ===== -->
-        <mxCell id="msg1" value="nh\u1eadp th\u1ebb t\u00edn d\u1ee5ng" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=10;fontSize=11;" edge="1" parent="1">
+        <mxCell id="msg1" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=10;fontSize=11;" value="Nhập thẻ tín dụng">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="150" y="150" as="sourcePoint" />
             <mxPoint x="505" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- ===== Buoc 2 (DA SUA): Self - Cong Thanh Toan tu kiem tra dinh dang the ===== -->
-        <mxCell id="msg2_self" value="ki\u1ec3m tra \u0111\u1ecbnh d\u1ea1ng th\u1ebb()" style="html=1;verticalAlign=top;align=left;endArrow=block;endFill=1;endSize=10;fontSize=11;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="520" y="192" as="sourcePoint" />
-            <mxPoint x="520" y="222" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="565" y="192" />
-              <mxPoint x="565" y="222" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-
-        <!-- ===== Buoc 3: Sync - Cong Thanh Toan -> Ngan Hang Loi ===== -->
-        <mxCell id="msg3" value="processPayment()" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=10;fontSize=11;" edge="1" parent="1">
+        <mxCell id="msg3" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=block;endFill=1;endSize=10;fontSize=11;" value="processPayment()">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="515" y="260" as="sourcePoint" />
             <mxPoint x="845" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- ===== Buoc 4: Return - Ngan Hang Loi -> Cong Thanh Toan ===== -->
-        <mxCell id="msg4" value="k\u1ebft qu\u1ea3 giao d\u1ecbch" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;fontSize=11;" edge="1" parent="1">
+        <mxCell id="msg4" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;fontSize=11;" value="Kết quả giao dịch">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="845" y="320" as="sourcePoint" />
             <mxPoint x="515" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- ===== Buoc 5 (DA SUA): Async - Cong Thanh Toan -> EmailServer, KHONG cho phan hoi ===== -->
-        <mxCell id="msg5" value="sendReceiptEmail()" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=0;endSize=10;fontSize=11;" edge="1" parent="1">
+        <mxCell id="msg5" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=0;endSize=10;fontSize=11;" value="sendReceiptEmail()">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="515" y="380" as="sourcePoint" />
             <mxPoint x="1145" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
-        <!-- ===== Buoc 6: Return - Cong Thanh Toan -> Khach hang ===== -->
-        <mxCell id="msg6" value="Hi\u1ec3n th\u1ecb th\u00e0nh c\u00f4ng" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;fontSize=11;" edge="1" parent="1">
+        <mxCell id="msg6" edge="1" parent="1" style="html=1;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;endSize=10;fontSize=11;" value="S">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="505" y="440" as="sourcePoint" />
             <mxPoint x="160" y="440" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-
+        <mxCell id="2UO0mtUdfRtj4NVVpeyZ-3" parent="1" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="510" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="2UO0mtUdfRtj4NVVpeyZ-4" edge="1" parent="1" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" target="2UO0mtUdfRtj4NVVpeyZ-3" value="Kiểm tra định dạng thẻ">
+          <mxGeometry relative="1" x="-0.0604" y="25" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="545" y="210" />
+            </Array>
+            <mxPoint x="515" y="180" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2UO0mtUdfRtj4NVVpeyZ-5" connectable="0" parent="2UO0mtUdfRtj4NVVpeyZ-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Text" vertex="1">
+          <mxGeometry relative="1" x="-0.0714" y="28" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
